@@ -23,9 +23,9 @@ if (isset($_SESSION['username'])) {
             <h1>Login</h1>
             <form method="post" action="login.php">
                 <label>Username</label><br>
-                <input type="text" placeholder="Enter username"><br>
+                <input type="text" placeholder="Enter username" name="username"><br>
                 <label>Password</label><br>
-                <input type="password" placeholder="Enter password"><br>
+                <input type="password" placeholder="Enter password" password="password"><br>
                 <button type="submit">Log in</button>
             </form>
         </div>     
