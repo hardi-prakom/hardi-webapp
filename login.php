@@ -5,7 +5,6 @@ include "koneksi.php";
 
 $username = $_POST['username'];
 $password = $_POST['password'];
-$password = md5('password');
 
 $sql = $pdo->prepare("SELECT * FROM user WHERE username=:a AND password=:b");
 $sql->bindParam(':a', $username);
